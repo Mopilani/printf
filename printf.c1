@@ -6,7 +6,8 @@
  */
 int _printf(const char *const format, ...)
 {
-	char *str;
+	/* char *str; */
+	char *_str_;
 	int _length_ = 0;
 	va_list _list_; /* Initialize a variable argument list */
 	const char *fmt_ptr = format;
@@ -23,7 +24,7 @@ int _printf(const char *const format, ...)
 					_length_ += _putchar_(va_arg(_list_, int));
 				else if (*fmt_ptr == 's') /* Handle string format specifier */
 				{
-					_str_ = va_arg(_list_, char *);
+					_str_ = va_arg(_list_, char *); 
 					_length_ += _print_str_(_str_);
 				}
 			}
