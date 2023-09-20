@@ -24,8 +24,10 @@ struct _lst
 */
 typedef struct _lst _lst_arr;
 int _printf(const char *format, ...);
+int _print_str_(const char *_s);
 int _putchar(char _p);
 int s_func(va_list _list);
+int _putchar_(char _p);
 int c_func(va_list _list);
 int d_func(va_list _list);
 int (*_slt_func(char s))(va_list _list);
